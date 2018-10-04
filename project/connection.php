@@ -6,7 +6,7 @@ if ($conn->connect_error) {
 ?>
 <p>
 	<?php
-echo "Connected successfully";
+// echo "Connected successfully";
 ?>
 </p>
 <?php
