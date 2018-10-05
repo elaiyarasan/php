@@ -1,10 +1,12 @@
 #Project 1:
 <h1 style="color:red">DashBorad</h1>
 In DashBoard Created the charts By using Some user data, With help of the Technology PHP,JAVASCRIPT,CSS,HTML,SQL
-<img src="image/scr1.png">
+<img src="image/scr8.png">
 #Project:2
 <h1 style="color:red">File Uploading</h1>
 File Uploading by using PHP,SQL,HTML
+<img src="image/scr10.png">
+
 #Project:3
 <h1 style="color:red">File Uploading By Using Angular Js</h1>
 Used Angular js for instead of javascript and upload the file and show the uploaded file name in drop down, if you choose the filename it will show the file
