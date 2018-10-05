@@ -1,5 +1,5 @@
 #Project 1:
-<h1 style="color:red">DashBorad</h1>
+<h1 color="red">DashBorad</h1>
 In DashBoard Created the charts By using Some user data, With help of the Technology PHP,JAVASCRIPT,CSS,HTML,SQL
 <img src="image/src8.png" height="400px" width="700px">
 #Project:2
