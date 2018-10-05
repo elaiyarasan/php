@@ -15,12 +15,14 @@ while($row = mysqli_fetch_array($con))
 	$obj->lastname=$row['lastname'];
 	$obj->mobile_number=$row['mobile_number'];
 	$obj->email=$row['email'];
+    $obj->dob=$row['dob'];
+
 	array_push($array, $obj);
 }
 }
 else
 {
-$selectdata="SELECT `id`, `firstname`, `lastname`, `mobile_number`, `email` FROM `signup` WHERE `email`= '$email' AND `password`='$password'";
+$selectdata="SELECT `id`, `firstname`, `lastname`, `mobile_number`, `email`,`dob` FROM `signup` WHERE `email`= '$email' AND `password`='$password'";
 $con=mysqli_query($conn,$selectdata);
 $array = array();
 while($row = mysqli_fetch_array($con))
@@ -31,6 +33,7 @@ while($row = mysqli_fetch_array($con))
 	$obj->lastname=$row['lastname'];
 	$obj->mobile_number=$row['mobile_number'];
 	$obj->email=$row['email'];
+  $obj->dob=$row['dob'];
 	array_push($array, $obj);
 }
 }
@@ -38,6 +41,8 @@ while($row = mysqli_fetch_array($con))
 
 
 ?>
+  <?php include"../topnav.php";?>
+
  <html>
  <head>
  <style>
@@ -72,7 +77,7 @@ td {border: 1px #DDD solid; padding: 5px; cursor: pointer;}
     background-color: red;
     color: #FFF;
 }
-
+.button:hover {background-color: #3e8e41}
 </style>
  	<script src="../jquery.js"></script>
 
@@ -85,6 +90,7 @@ td {border: 1px #DDD solid; padding: 5px; cursor: pointer;}
 			<th>Lastname</th>
 			<th>Mobile Number</th>
 			<th>Email</th>
+      <th>Date of birth</th>
 		</thead>
 		<tbody>
 		<?php 
@@ -94,49 +100,72 @@ foreach ($array as $value) {
 ?><td><?php echo $val;?></td>
 <?php } ?>
 </tr> <?php } ?>
-
+<tr><td colspan="6" style="background-color:#4CAF50"><input type="button"  id="tst" value="DELETE" onclick="fnselect()" style="display: inline-block;
+  padding: 15px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;"/></td></tr>
 </tbody>
-	
-	</table>
-<button onclick="update()">Edit</button><button onclick="delete()">Delete</button>
+<!-- <tfoot style="margin-top:1300px"></tfoot>
+ -->
+</table> 
+    <input type="hidden" id="value">
+<input type="hidden" id="dob">
+<!-- <button onclick="edit()">edit</button> -->
 
-    <input type="button" id="tst" value="OK" onclick="fnselect()" />
-	<script>
+<script>
+
+function edit()
+{
+	    var txt;
+    var person = prompt("Please enter the date of birth in this formate(YYYY-MM-DD)", "");
+    if (person == null || person == "") {
+        alert("Enter the dob");
+        txt="please Enter the dob";
+    } else {
+        txt =person;
+    }
+    document.getElementById("dob").value = txt;
+}
 
 
 
+function highlight(e) 
+{
 
-
-// function update(e) {
-//     if (selected[0]) selected[0].className = '';
-//     e.target.parentNode.className = 'selected';
-// }
-
-function highlight(e) {
     if (selected[0]) selected[0].className = '';
     e.target.parentNode.className = 'selected';
-}
-function update(){
-    
-
-    
-    var l=($("tr.selected td:first" ).html());
-    alert(l);
-
-    // window.location="edit.php+?id="+selectedData[0][0];
+   
 }
 
+	var table = document.getElementById('customers'),
+    selected = table.getElementsByClassName('selected');
+	table.onclick = highlight;
 
+function fnselect()
+{
+    edit();
+    var l=$("tr.selected td:first" ).html();
+	document.getElementById("value").value=l;
+var data=
+	{
+    	'id':document.getElementById("value").value,
+'dob':document.getElementById('dob').value,
+	}
+ $.ajax({
+	 method:'POST',
+	url:'delete.php',
+	data:data,
+	});
+ location.reload();
+}
 
-// 	 function dksfjdks() {
-// 	 	     alert("fdf");
-
-// }
-	 
-// function myFunction() {
-//  var x = document.getElementById("customers").rows.length;
-//     document.getElementById("demo").innerHTML = "Found " + x + " tr elements in the table.";
-// }
-    </script>
+</script>
 </body>
 </html>

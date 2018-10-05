@@ -9,8 +9,9 @@ function signup()
 		'email':$('#email').val(),
 		'password':$('#password').val(),
 		'repassword':$('#repassword').val(),
+		'dob':$('#dob').val(),
 	}
-	if(getdata.firstname==""||getdata.lastname==""||getdata.mobile_number==""||getdata.email==""||getdata.password==""||getdata.repassword=="")
+	if(getdata.firstname==""||getdata.lastname==""||getdata.mobile_number==""||getdata.email==""||getdata.password==""||getdata.repassword==""||getdata.dob=="")
 	{
 		alert("fill all the column");
 	}
@@ -36,4 +37,13 @@ else
 	alert("Your password was mismatching with reenter password");
 }
 }
+}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
