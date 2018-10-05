@@ -9,7 +9,7 @@ In DashBoard Created the charts By using Some user data, With help of the Techno
 <h1 style="color:red">File Uploading</h1>
 File Uploading by using PHP,SQL,HTML
 
-<img src="image/src9.png" height="200px" width="200px">
+<img src="image/src9.png" height="100px" width="100px">
 
 #Project:3
 <h1 style="color:red">File Uploading By Using Angular Js</h1>
@@ -17,7 +17,7 @@ Used Angular js for instead of javascript and upload the file and show the uploa
 Technology used
 PHP,AngularJs,CSS,HTML,SQL
 
-<img src="image/src11.png" height="400px" width="700px">
+<img src="image/src11.png" height="200px" width="200px">
 
 
 #Project:4
@@ -47,7 +47,7 @@ When user get login or signup the message will send to the user
 technology used
 HTML,javascript,jqery,php
 
-<img src="image/src13.png" height="200px" width="300px">
+<img src="image/src13.png" height="100px" width="100px">
 
 
 #Project:7
@@ -56,7 +56,7 @@ When user get login or signup the message will send to the user
 technology used
 HTML,javascript,jqery,php,sql
 
-<img src="image/src14.png" height="200px" width="300px">
+<img src="image/src14.png" height="100px" width="100px">
 
 
 <h4 style="color:red">I attached all projects which needs the databases worked in sql as a file <i>'db.sql'</i>
