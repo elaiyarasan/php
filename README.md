@@ -37,7 +37,6 @@ HTML,CSS,Bootstrap,javascript,jqery,sql,php
 <img src="image/src2.png" height="400px" width="700px">
 <img src="image/src3.png" height="400px" width="700px">
 <img src="image/src4.png" height="400px" width="700px">
-<img src="image/src5.png" height="400px" width="700px">
 <img src="image/src6.png" height="400px" width="700px">
 
 
