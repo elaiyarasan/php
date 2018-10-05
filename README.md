@@ -17,14 +17,14 @@ Used Angular js for instead of javascript and upload the file and show the uploa
 Technology used
 PHP,AngularJs,CSS,HTML,SQL
 
-<img src="image/src11.png" height="200px" width="200px">
+<img src="image/src11.png" height="200px" width="300px">
 
 
 #Project:4
 <h1>Oops concept</h1>
 oops concepts in Php solved in program
 
-<img src="image/src12.png" height="400px" width="700px">
+<img src="image/src12.png" height="200px" width="300px">
 
 
 #Project:5
@@ -47,7 +47,7 @@ When user get login or signup the message will send to the user
 technology used
 HTML,javascript,jqery,php
 
-<img src="image/src13.png" height="100px" width="100px">
+<img src="image/src13.png" height="100px" width="200px">
 
 
 #Project:7
@@ -56,7 +56,7 @@ When user get login or signup the message will send to the user
 technology used
 HTML,javascript,jqery,php,sql
 
-<img src="image/src14.png" height="100px" width="100px">
+<img src="image/src14.png" height="100px" width="200px">
 
 
 <h4 style="color:red">I attached all projects which needs the databases worked in sql as a file <i>'db.sql'</i>
