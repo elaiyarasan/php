@@ -32,3 +32,6 @@ Project:7
 When user get login or signup the message will send to the user 
 technology used
 HTML,javascript,jqery,php,sql
+
+
+<h4>I attached all projects which needs the databases worked in sql as a file <i>'db.sql'</i>
