@@ -1,11 +1,11 @@
 #Project 1:
 <h1 style="color:red">DashBorad</h1>
 In DashBoard Created the charts By using Some user data, With help of the Technology PHP,JAVASCRIPT,CSS,HTML,SQL
-<img src="image/scr8.png" height="400px" width="700px">
+<img src="image/src8.png" height="400px" width="700px">
 #Project:2
 <h1 style="color:red">File Uploading</h1>
 File Uploading by using PHP,SQL,HTML
-<img src="image/scr10.png" height="400px" width="700px">
+<img src="image/src9.png" height="400px" width="700px">
 
 #Project:3
 <h1 style="color:red">File Uploading By Using Angular Js</h1>
@@ -24,12 +24,12 @@ oops concepts in Php solved in program
 Used to say about me created one template, created signup, login page if you are admin you can see the all contacts else you can edit or delete your account
 technology used
 HTML,CSS,Bootstrap,javascript,jqery,sql,php
+<img src="image/src1.png" height="400px" width="700px">
 <img src="image/src2.png" height="400px" width="700px">
 <img src="image/src3.png" height="400px" width="700px">
 <img src="image/src4.png" height="400px" width="700px">
 <img src="image/src5.png" height="400px" width="700px">
 <img src="image/src6.png" height="400px" width="700px">
-<img src="image/src7.png" height="400px" width="700px">
 
 #Project:6
 <h1 style="color:red">Push Notification</h1>
