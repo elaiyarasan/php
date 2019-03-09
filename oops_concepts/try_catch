@@ -1,0 +1,17 @@
+function val($var)
+{
+  if($var>2)
+    {
+      throw new Exception('The Number is Greater then 2');
+    }
+  return true;
+}
+try
+{
+  val(1);
+  echo "If you see the number below 2";
+}
+
+catch(Exception $e){
+  echo "Message:".$e->getmessage();
+}
